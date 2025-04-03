@@ -1,0 +1,207 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1; /* Base z-index for the hero section */
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2; /* Video is above the section but below the overlay */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacity overlay */
+  z-index: 3; /* Overlay is above the video */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 4; /* Content is above the overlay */
+  color: #fff;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  color: #b7b9c0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #077843;
+  color: #fcfcfc;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #0a6644;
+}
+
+.hero-features-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%); /* Centers the cards on the bottom edge of the hero section */
+  z-index: 10; /* Increased z-index to ensure cards are above all other elements */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: #1a3c34;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 11; /* Ensure the cards themselves are also above other elements */
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Placeholder Sections */
+.section-placeholder {
+  position: relative;
+  z-index: 0; /* Ensure the next section is below the feature cards */
+  padding: 80px 20px; /* Increased padding to account for the overlapping cards */
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.section-placeholder h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-placeholder p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-features-wrapper {
+    transform: translateY(50%);
+  }
+
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .feature-card {
+    max-width: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-features-wrapper{
+    margin-bottom: 320px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .feature-card {
+    max-width: 90%;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.8rem;
+  }
+}

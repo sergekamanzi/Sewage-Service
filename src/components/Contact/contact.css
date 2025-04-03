@@ -1,0 +1,207 @@
+.contact-container {
+    background-color: #1a2a44;
+    color: #fff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+  }
+  
+  /* Header Section (Logo and Phone) */
+  .contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-logo img {
+    height: 140px; /* Approximate height to match the original h1 size */
+    width: auto;
+  }
+  
+  .contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-icon {
+    background-color: #209c66;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+  
+  .contact-phone span {
+    font-size: 1rem;
+  }
+  
+  .contact-phone p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Columns Section */
+  .contact-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .contact-section {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .contact-section h3 {
+    color: #156eaa;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+  
+  .contact-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-section ul li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .info-left {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .info-icon {
+    background-color: #209c66;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
+  
+  .info-item span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .info-item p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    background-color: #209c66;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #336fbe;
+  }
+  
+  /* Footer Bottom */
+  .contact-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .contact-columns {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-section {
+      margin-bottom: 20px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .info-left {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .social-icons {
+      margin-top: 20px;
+    }
+  
+    .contact-logo img {
+      height: 35px; /* Slightly smaller for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-logo img {
+      height: 30px; /* Smaller for mobile screens */
+    }
+  
+    .contact-phone p {
+      font-size: 1.2rem;
+    }
+  
+    .contact-section h3 {
+      font-size: 1rem;
+    }
+  
+    .contact-section p,
+    .contact-section ul li,
+    .info-item span,
+    .info-item p {
+      font-size: 0.8rem;
+    }
+  }
