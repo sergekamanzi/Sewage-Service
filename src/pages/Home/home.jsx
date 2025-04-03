@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { FaTrashAlt, FaRecycle, FaShieldAlt } from 'react-icons/fa';
+import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -42,10 +42,43 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Placeholder for Section 2 */}
-      <section className="section-placeholder">
-        <h2>Section 2</h2>
-        <p>Placeholder for the second section.</p>
+      {/* Manage Section */}
+      <section className="manage-section">
+        <div className="manage-content">
+          <h1>Smart Solutions for Waste and Recycling</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus velit eget condimentum. Curabitur pharetra, urna ut rutrum, congue.
+          </p>
+          <div className="manage-features">
+            <div className="manage-card">
+              <FaCogs className="manage-icon" />
+              <h3>Operations Management</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+            <div className="manage-card">
+              <FaHeadset className="manage-icon" />
+              <h3>Customer Service</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+            <div className="manage-card">
+              <FaLeaf className="manage-icon" />
+              <h3>Environmental Compliance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+            <div className="manage-card">
+              <FaLightbulb className="manage-icon" />
+              <h3>Sustainability and Innovation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+            </div>
+          </div>
+        </div>
+        <div className="manage-image">
+          <img
+            src="/manage.jpg" 
+            alt="People recycling"
+            className="manage-image-content"
+          />
+        </div>
       </section>
 
       {/* Placeholder for Section 3 */}

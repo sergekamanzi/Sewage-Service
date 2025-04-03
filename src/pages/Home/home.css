@@ -3,7 +3,7 @@
   position: relative;
 }
 
-/* Hero Section */
+/* Hero Section Start */
 .hero-section {
   position: relative;
   height: 80vh;
@@ -121,8 +121,85 @@
   font-size: 0.9rem;
   opacity: 0.8;
 }
+/* Hero Section End */
 
-/* Placeholder Sections */
+/* Manage Section Start */
+.manage-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+.manage-content {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 40px;
+}
+
+.manage-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.manage-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.manage-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.manage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.manage-icon {
+  font-size: 2rem;
+  color: #1a3c34; /* Match the color scheme of the icons in the image */
+  margin-bottom: 10px;
+}
+
+.manage-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.manage-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.manage-image {
+  flex: 1;
+  max-width: 400px;
+  height: 400px; /* Increased height from 300px to 400px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent image from expanding the container */
+}
+
+.manage-image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the box without stretching */
+}
+/* Manage Section End */
+
+/* Placeholder Sections Start */
 .section-placeholder {
   position: relative;
   z-index: 0; /* Ensure the next section is below the feature cards */
@@ -140,9 +217,11 @@
   font-size: 1rem;
   color: #666;
 }
+/* Placeholder Sections End */
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Hero Section Responsive */
   .hero-section {
     height: 100vh;
   }
@@ -169,14 +248,40 @@
     max-width: 80%;
     margin-bottom: 15px;
   }
+
+  /* Manage Section Responsive */
+  .manage-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .manage-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .manage-content h1 {
+    font-size: 2rem;
+  }
+
+  .manage-features {
+    grid-template-columns: 1fr;
+  }
+
+  .manage-image {
+    width: 100%;
+    max-width: 300px;
+    height: 300px; /* Adjusted height for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
+  /* Hero Section Responsive */
   .hero-content {
     padding: 20px;
   }
 
-  .hero-features-wrapper{
+  .hero-features-wrapper {
     margin-bottom: 320px;
   }
 
@@ -203,5 +308,26 @@
 
   .feature-card p {
     font-size: 0.8rem;
+  }
+
+  /* Manage Section Responsive */
+  .manage-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .manage-content p {
+    font-size: 0.9rem;
+  }
+
+  .manage-card h3 {
+    font-size: 1rem;
+  }
+
+  .manage-card p {
+    font-size: 0.8rem;
+  }
+
+  .manage-image {
+    height: 250px; /* Further adjusted height for very small screens */
   }
 }
