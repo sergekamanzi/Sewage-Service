@@ -1,0 +1,414 @@
+/* ==========================================
+   ABOUT HEADER SECTION STYLES 
+   =========================================== */
+   .about-header {
+    position: relative;
+    height: 300px;
+    background-image: url('/about-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* ==========================================
+     ABOUT BODY SECTION STYLES
+     =========================================== */
+  .about-body {
+    padding: 50px 20px;
+    position: relative;
+    background-color: #f9f9f9; /* Light background to match the image */
+  }
+  
+  .experience-banner {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background-color: #1a3c34; /* Dark green background */
+    color: #1a3c34; /* Dark green text */
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .experience-banner p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .body-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .image-section {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .text-section {
+    flex: 2;
+  }
+  
+  .text-section h3 {
+    font-size: 1rem;
+    color: #227549; /* Green text */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .text-section h2 {
+    font-size: 2.5rem;
+    color: #1a3c34; /* Dark green */
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .text-section p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .vision-mission {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .vision, .mission {
+    flex: 1;
+  }
+  
+  .vision .icon, .mission .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .vision h4, .mission h4 {
+    font-size: 1.2rem;
+    color: #1a3c34;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .vision p, .mission p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .vision ul, .mission ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .vision li, .mission li {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .quote {
+    background-color: #1a3c34; /* Dark green background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    font-style: italic;
+  }
+  
+  .quote::before {
+    content: '"';
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.3;
+  }
+  
+  .quote p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .quote .author {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: white;
+    font-style: normal;
+    text-align: left;
+  }
+  
+  /* ==========================================
+     REASONS SECTION STYLES - THIRD SECTION
+     =========================================== */
+  .reasons-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .reasons-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .reasons-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .reasons-header h2 {
+    font-size: 2.5rem;
+    color: #1a3c34;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .reasons-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 65%;
+    margin-left: auto;
+  }
+  
+  .reason-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .reason-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 70px;
+    background-color: #1a3c34; /* Red background for icons */
+    border-radius: 50%;
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  .reason-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .reason-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .reasons-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    max-width: 400px;
+  }
+  
+  .reasons-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* ==========================================
+     RESPONSIVE DESIGN FOR ALL SECTIONS
+     =========================================== */
+  @media (max-width: 768px) {
+    /* About Header Section */
+    .about-header {
+      height: 300px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .about-header p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  
+    /* About Body Section */
+    .experience-banner {
+      position: static;
+      margin: 0 auto 20px;
+      width: fit-content;
+    }
+  
+    .body-content {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 20px;
+    }
+  
+    .image-section {
+      max-width: 100%;
+    }
+  
+    .text-section h2 {
+      font-size: 2rem;
+    }
+  
+    .vision-mission {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    /* Reasons Section */
+    .reasons-grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+      gap: 30px;
+    }
+  
+    .reasons-image {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* About Header Section */
+    .about-header {
+      height: 250px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about-header p {
+      font-size: 0.9rem;
+    }
+  
+    /* About Body Section */
+    .experience-banner{
+      margin-top: -100px;
+    }
+  
+    .experience-banner h2 {
+      font-size: 2rem;
+    }
+  
+    .experience-banner p {
+      font-size: 0.8rem;
+    }
+  
+    .text-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-section h3 {
+      font-size: 0.9rem;
+    }
+  
+    .vision h4, .mission h4 {
+      font-size: 1rem;
+    }
+  
+    .quote p {
+      font-size: 0.9rem;
+    }
+  
+    .quote .author {
+      font-size: 0.8rem;
+    }
+  
+    /* Reasons Section */
+    .reasons-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .reasons-header p {
+      font-size: 0.9rem;
+    }
+  
+    .reason-item {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+  }
