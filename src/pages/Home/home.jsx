@@ -1,8 +1,53 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './home.css';
-import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb } from 'react-icons/fa';
+import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb, FaUserTie, FaThumbsUp, FaTruck } from 'react-icons/fa';
 
 const Home = () => {
+  const [stats, setStats] = useState({
+    yearsExperience: 0,
+    happyCustomers: 0,
+    projectsDone: 0,
+    collectionVehicles: 0,
+  });
+
+  useEffect(() => {
+    const animateNumbers = () => {
+      const targets = {
+        yearsExperience: 4,
+        happyCustomers: 9000,
+        projectsDone: 120,
+        collectionVehicles: 2,
+      };
+      
+      const duration = 2000; // 2 seconds animation
+      const steps = 60; // 60 frames
+      const increment = {
+        yearsExperience: targets.yearsExperience / steps,
+        happyCustomers: targets.happyCustomers / steps,
+        projectsDone: targets.projectsDone / steps,
+        collectionVehicles: targets.collectionVehicles / steps,
+      };
+
+      let currentStep = 0;
+      
+      const timer = setInterval(() => {
+        currentStep++;
+        setStats({
+          yearsExperience: Math.min(Math.round(currentStep * increment.yearsExperience), targets.yearsExperience),
+          happyCustomers: Math.min(Math.round(currentStep * increment.happyCustomers), targets.happyCustomers),
+          projectsDone: Math.min(Math.round(currentStep * increment.projectsDone), targets.projectsDone),
+          collectionVehicles: Math.min(Math.round(currentStep * increment.collectionVehicles), targets.collectionVehicles),
+        });
+
+        if (currentStep >= steps) {
+          clearInterval(timer);
+        }
+      }, duration / steps);
+    };
+
+    animateNumbers();
+  }, []);
+
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -81,10 +126,30 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Placeholder for Section 3 */}
-      <section className="section-placeholder">
-        <h2>Section 3</h2>
-        <p>Placeholder for the third section.</p>
+      {/* Reviews Section */}
+      <section className="reviews-section">
+        <div className="reviews-stats">
+          <div className="stat-card">
+            <FaUserTie className="stat-icon" />
+            <h2>{stats.yearsExperience}+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div className="stat-card">
+            <FaThumbsUp className="stat-icon" />
+            <h2>{(stats.happyCustomers / 1000).toFixed(1)}K</h2>
+            <p>Happy Customers</p>
+          </div>
+          <div className="stat-card">
+            <FaTrashAlt className="stat-icon" />
+            <h2>{stats.projectsDone}</h2>
+            <p>Projects Done</p>
+          </div>
+          <div className="stat-card">
+            <FaTruck className="stat-icon" />
+            <h2>{stats.collectionVehicles}</h2>
+            <p>Collection Vehicles</p>
+          </div>
+        </div>
       </section>
 
       {/* Placeholder for Section 4 */}

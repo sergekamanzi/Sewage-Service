@@ -3,14 +3,14 @@
   position: relative;
 }
 
-/* Hero Section Start */
+/* Hero Section Styles */
 .hero-section {
   position: relative;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1; /* Base z-index for the hero section */
+  z-index: 1;
 }
 
 .hero-video {
@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 2; /* Video is above the section but below the overlay */
+  z-index: 2;
 }
 
 .hero-overlay {
@@ -29,13 +29,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Opacity overlay */
-  z-index: 3; /* Overlay is above the video */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
 .hero-content {
   position: relative;
-  z-index: 4; /* Content is above the overlay */
+  z-index: 4;
   color: #fff;
   padding: 40px;
   max-width: 600px;
@@ -80,8 +80,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  transform: translateY(50%); /* Centers the cards on the bottom edge of the hero section */
-  z-index: 10; /* Increased z-index to ensure cards are above all other elements */
+  transform: translateY(50%);
+  z-index: 10;
   display: flex;
   justify-content: center;
 }
@@ -104,7 +104,7 @@
   max-width: 300px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 11; /* Ensure the cards themselves are also above other elements */
+  z-index: 11;
 }
 
 .feature-icon {
@@ -121,9 +121,8 @@
   font-size: 0.9rem;
   opacity: 0.8;
 }
-/* Hero Section End */
 
-/* Manage Section Start */
+/* Manage Section Styles */
 .manage-section {
   display: flex;
   align-items: center;
@@ -167,7 +166,7 @@
 
 .manage-icon {
   font-size: 2rem;
-  color: #1a3c34; /* Match the color scheme of the icons in the image */
+  color: #1a3c34;
   margin-bottom: 10px;
 }
 
@@ -185,25 +184,66 @@
 .manage-image {
   flex: 1;
   max-width: 400px;
-  height: 400px; /* Increased height from 300px to 400px */
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Prevent image from expanding the container */
+  overflow: hidden;
 }
 
 .manage-image-content {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensure the image fits within the box without stretching */
+  object-fit: contain;
 }
-/* Manage Section End */
 
-/* Placeholder Sections Start */
+/* Reviews Section Styles */
+.reviews-section {
+  padding: 30px; /* Reduced padding for compact height */
+  text-align: center;
+  background-color: #1a3c34; /* Dark green background */
+  position: relative;
+  z-index: 0;
+}
+
+.reviews-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+  color: #fff;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #f0efed; /* Yellow color for icons */
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #c7c2c2;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #c7c2c2;
+}
+
+/* Placeholder Section Styles */
 .section-placeholder {
   position: relative;
-  z-index: 0; /* Ensure the next section is below the feature cards */
-  padding: 80px 20px; /* Increased padding to account for the overlapping cards */
+  z-index: 0;
+  padding: 80px 20px;
   text-align: center;
   background-color: #f5f5f5;
 }
@@ -217,7 +257,6 @@
   font-size: 1rem;
   color: #666;
 }
-/* Placeholder Sections End */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -271,7 +310,26 @@
   .manage-image {
     width: 100%;
     max-width: 300px;
-    height: 300px; /* Adjusted height for smaller screens */
+    height: 300px;
+  }
+
+  /* Reviews Section Responsive */
+  .reviews-section {
+    padding: 15px 0;
+  }
+
+  .reviews-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .stat-card {
+    flex: 1 1 40%;
+  }
+
+  .stat-card h2 {
+    font-size: 2rem;
   }
 }
 
@@ -328,6 +386,19 @@
   }
 
   .manage-image {
-    height: 250px; /* Further adjusted height for very small screens */
+    height: 250px;
+  }
+
+  /* Reviews Section Responsive */
+  .stat-icon {
+    font-size: 1.5rem;
+  }
+
+  .stat-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .stat-card p {
+    font-size: 0.8rem;
   }
 }
