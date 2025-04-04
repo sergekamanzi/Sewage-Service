@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
+import { useNavigate } from 'react-router-dom';
 import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb, FaUserTie, FaThumbsUp, FaTruck } from 'react-icons/fa';
 
 const Home = () => {
@@ -9,6 +10,8 @@ const Home = () => {
     projectsDone: 0,
     collectionVehicles: 0,
   });
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const animateNumbers = () => {
@@ -64,7 +67,9 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus
             velit eget condimentum. Curabitur pharetra, urna ut rutrum, congue.
           </p>
-          <button className="hero-button">Book an appointment</button>
+          <button className="hero-button" onClick={() => navigate('/booking')}>
+              Book an appointment
+          </button>
         </div>
         <div className="hero-features-wrapper">
           <div className="hero-features">
