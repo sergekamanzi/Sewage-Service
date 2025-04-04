@@ -64,7 +64,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus
             velit eget condimentum. Curabitur pharetra, urna ut rutrum, congue.
           </p>
-          <button className="hero-button">Make a Request</button>
+          <button className="hero-button">Book an appointment</button>
         </div>
         <div className="hero-features-wrapper">
           <div className="hero-features">
