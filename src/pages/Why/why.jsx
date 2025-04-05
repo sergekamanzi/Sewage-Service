@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './why.css';
 import { FiClock, FiUsers, FiMessageSquare, FiDollarSign } from 'react-icons/fi';
 
 const Why = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const end = 4;
+    const duration = 1000;
+    const stepTime = Math.floor(duration / end);
+
+    const counter = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start === end) {
+        clearInterval(counter);
+      }
+    }, stepTime);
+
+    return () => clearInterval(counter);
+  }, []);
+
   return (
     <div className="about-page">
       {/* About Header Section */}
@@ -21,7 +40,7 @@ const Why = () => {
       {/* About Body Section */}
       <div className="about-body">
         <div className="experience-banner">
-          <h2>4+</h2>
+          <h2>{count}+</h2>
           <p>Year Experience</p>
         </div>
         <div className="body-content">
