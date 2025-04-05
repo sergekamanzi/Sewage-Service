@@ -6,6 +6,7 @@ import Home from './pages/Home/home';
 import Why from './pages/Why/why';
 import Service from './pages/Service/service';
 import Booking from './pages/Booking/booking';
+import Blog from './pages/Blog/blog'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/why-us" element={<Why />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/booking" element={<Booking />} />
         {/* Add more routes here for other pages like Why Us, Services, etc. */}
       </Routes>

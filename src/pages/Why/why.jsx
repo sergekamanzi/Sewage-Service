@@ -112,7 +112,7 @@ const Why = () => {
             </div>
           </div>
           <div className="reasons-image">
-            <img src="/about-header.jpg" alt="Professional plumber with tools" />
+            <img src="/truck.png" alt="Professional plumber with tools" />
           </div>
         </div>
       </div>
