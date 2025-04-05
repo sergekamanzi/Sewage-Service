@@ -47,7 +47,7 @@ const Blog = () => {
         <div className="featured-post">
           <div className="featured-post-header">
             <span className="category">Blog & News</span>
-            <h2>Exploring Trends in Transportation</h2>
+            <h2>Exploring Trends in Sewage Transportation</h2>
             <p className="featured-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam leo. Nullam id scelerisque elit.
             </p>
@@ -79,7 +79,21 @@ const Blog = () => {
         </div>
       </section>
       
-      {/* Future Section 3 will go here */}
+      {/* Last Section (Promotional Banner) */}
+      <section className="last-section">
+        <div className="last-section-content">
+          <h2>The Right Gears Make Best Journey</h2>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+          </p>
+          <a href="#" className="shop-now-btn">
+            Donate Now
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="arrow-icon">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

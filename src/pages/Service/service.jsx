@@ -76,7 +76,7 @@ const Service = () => {
                 <p>Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
               </div>
               <div className="service-card-action">
-                <a href="/services/tankless-water-heaters" className="read-more-btn">Read More</a>
+                <a href="/" className="read-more-btn">Read More</a>
               </div>
             </div>
           </div>
