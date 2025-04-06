@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './home.css';
 import { useNavigate } from 'react-router-dom';
-import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb, FaUserTie, FaThumbsUp, FaTruck } from 'react-icons/fa';
+import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb, FaUserTie, FaThumbsUp, FaTruck, FaPlay, FaPause } from 'react-icons/fa';
 
 const Home = () => {
   const [stats, setStats] = useState({
@@ -10,7 +10,10 @@ const Home = () => {
     projectsDone: 0,
     collectionVehicles: 0,
   });
-
+  
+  const [isPlaying, setIsPlaying] = useState(true);
+  const serviceVideoRef = useRef(null);
+  
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -51,11 +54,33 @@ const Home = () => {
     animateNumbers();
   }, []);
 
+  // Ensure videos autoplay
+  useEffect(() => {
+    // Force autoplay on all videos
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.play().catch(error => {
+        console.log("Autoplay was prevented:", error);
+      });
+    });
+  }, []);
+
+  const togglePlayPause = () => {
+    if (serviceVideoRef.current) {
+      if (isPlaying) {
+        serviceVideoRef.current.pause();
+      } else {
+        serviceVideoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero-section">
-        <video className="hero-video" autoPlay loop muted>
+        <video className="hero-video" autoPlay loop muted playsInline>
           <source src="hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -157,10 +182,35 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Placeholder for Section 4 */}
-      <section className="section-placeholder">
-        <h2>Section 4</h2>
-        <p>Placeholder for the fourth section.</p>
+      {/* Construction Services Section */}
+      <section className="construction-section">
+        <div className="construction-content">
+          <span className="subtitle">KRAFTY AGENCY</span>
+          <h1>SERVICES OF CONSTRUCTION</h1>
+          <p>
+            For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors.
+          </p>
+          <div className="service-item">
+            <FaLeaf className="service-icon" />
+            <h3>Commercial Design</h3>
+          </div>
+        </div>
+        <div className="construction-video">
+          <video 
+            ref={serviceVideoRef}
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="service-video"
+          >
+            <source src="/last.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="video-play-button" onClick={togglePlayPause}>
+            {isPlaying ? <FaPause className="play-icon" /> : <FaPlay className="play-icon" />}
+          </div>
+        </div>
       </section>
     </div>
   );
