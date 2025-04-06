@@ -204,7 +204,7 @@ const Home = () => {
             playsInline 
             className="service-video"
           >
-            <source src="/last.mp4" type="video/mp4" />
+            <source src="/" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="video-play-button" onClick={togglePlayPause}>
