@@ -14,8 +14,8 @@ const Contact = () => {
           </div>
           <div className="contact-phone">
             <FaPhone className="contact-icon" />
-            <span>Book Online or Call</span>
-            <p>+120 012 668</p>
+            <span> Call</span>
+            <p> +250786289187 or +250795752328</p>
           </div>
         </div>
 
@@ -25,8 +25,9 @@ const Contact = () => {
           <div className="contact-section">
             <h3>ABOUT</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing, elit, 
-              imperdiet cursus, congue leo.
+            This is suitable for a company or project focused on sanitation, sewage treatment, or sustainable water solutions,
+            With years of expertise in sewage treatment and sustainable sanitation practices, our mission is to provide efficient, 
+            eco-friendly, and cost-effective sewage management systems for urban and rural communities.
             </p>
           </div>
 
@@ -46,25 +47,14 @@ const Contact = () => {
           <div className="contact-section">
             <h3>QUICK LINKS</h3>
             <ul>
-              <li>Help Centre</li>
-              <li>Testimonials</li>
-              <li>Careers</li>
-              <li>Business Values</li>
+              <li>Home</li>
+              <li>Why us</li>
+              <li>Service</li>
+              <li>Blog</li>
               <li>Contact Us</li>
             </ul>
           </div>
 
-          {/* Our Regions Section */}
-          <div className="contact-section">
-            <h3>OUR REGIONS</h3>
-            <ul>
-              <li>Alabama</li>
-              <li>Alaska</li>
-              <li>California</li>
-              <li>Colorado</li>
-              <li>Arizona</li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -74,12 +64,12 @@ const Contact = () => {
           <div className="info-item">
             <FaMapMarkerAlt className="info-icon" />
             <span>LOCATION</span>
-            <p>JL. Soekarno-Hatta</p>
+            <p>INALAS KN 20 Ave, Kimisagara</p>
           </div>
           <div className="info-item">
             <FaEnvelope className="info-icon" />
             <span>EMAIL</span>
-            <p>prosplum@email.com</p>
+            <p>info@camelmotorgroup.com</p>
           </div>
           <div className="info-item">
             <FaClock className="info-icon" />
@@ -91,7 +81,6 @@ const Contact = () => {
           <a href="#"><FaFacebookF /></a>
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaPinterestP /></a>
           <a href="#"><FaInstagram /></a>
         </div>
       </div>

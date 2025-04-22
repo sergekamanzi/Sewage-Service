@@ -89,8 +89,8 @@ const Home = () => {
           <h2>We Are Diligent</h2>
           <h1>Innovative Solutions for a Cleaner Planet</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus
-            velit eget condimentum. Curabitur pharetra, urna ut rutrum, congue.
+          Treating sewage before it is released into the environment
+          Ensuring clean water for communities is our priority
           </p>
           <button className="hero-button" onClick={() => navigate('/booking')}>
               Book an appointment
