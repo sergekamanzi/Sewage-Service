@@ -96,6 +96,10 @@ const Home = () => {
               Book an appointment
           </button>
         </div>
+      </section>
+
+      {/* Features Section (Moved as Second Section) */}
+      <section className="features-section">
         <div className="hero-features-wrapper">
           <div className="hero-features">
             <div className="feature-card">
