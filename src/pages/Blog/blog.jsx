@@ -8,21 +8,21 @@ const Blog = () => {
       image: '/blog1.jpg',
       date: 'March 25, 2024',
       title: 'Eco-Friendly Practices for a Greener Future',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam...',
+      description: 'Discover sustainable sewage management practices that reduce environmental impact, promote water conservation, and enhance community health.',
     },
     {
       id: 2,
       image: '/blog2.jpeg',
       date: 'March 25, 2024',
       title: 'The Benefits of Commercial Recycling Programs',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam...',
+      description: 'the advantages of advanced sewage treatment solutions, focusing on sustainability, improved public health, and environmental protection.',
     },
     {
       id: 3,
       image: '/blog3.jfif',
       date: 'March 25, 2024',
       title: 'Innovative Waste Management Solutions',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam...',
+      description: 'cutting-edge solutions in waste management that promote sustainability and enhance operational efficiency.',
     }
   ];
 
@@ -49,7 +49,10 @@ const Blog = () => {
             <span className="category">Blog & News</span>
             <h2>Exploring Trends in Sewage Transportation</h2>
             <p className="featured-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi faucibus cursus augue, eget posuere ligula suscipit ut. Vestibulum ac felis bibendum, fermentum erat vel, aliquam leo. Nullam id scelerisque elit.
+            Stay updated with the latest trends and advancements 
+            in sewage transportation, ensuring better efficiency, 
+            sustainability, and innovation in waste management systems.
+             Our blog covers key insights, challenges, and emerging technologies in the industry.
             </p>
           </div>
           
@@ -82,9 +85,9 @@ const Blog = () => {
       {/* Last Section (Promotional Banner) */}
       <section className="last-section">
         <div className="last-section-content">
-          <h2>The Right Gears Make Best Journey</h2>
+          <h2>The Right Resources Drive a Cleaner Future</h2>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+          Your support enables us to implement sustainable sewage management solutions, improve infrastructure, and protect the environment. Together, we can create a cleaner, healthier planet for future generations.
           </p>
           <a href="#" className="shop-now-btn">
             Donate Now

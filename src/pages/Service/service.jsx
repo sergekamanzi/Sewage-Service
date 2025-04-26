@@ -41,13 +41,18 @@ const Service = () => {
                 <img src="/service1.jpg" alt="Plumbing Services" />
               </div>
               <div className="service-card-title">
-                <h3>Plumbing</h3>
+                <h3>Emptying, Transportation</h3>
               </div>
               <div className="service-card-description">
-                <p>Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
+                <p>the process of collecting, transporting,
+                      and disposing of waste from designated
+                      collection points to a disposal or treatment
+                      facility. This service is essential in managing 
+                      waste from septic tanks, portable toilets, 
+                      industrial tanks, and dumping sites.</p>
               </div>
               <div className="service-card-action">
-                <a href="/services/plumbing" className="read-more-btn">Read More</a>
+                <a href="/services" className="read-more-btn">Read More</a>
               </div>
             </div>
 
@@ -57,13 +62,17 @@ const Service = () => {
                 <img src="/service2.jpg" alt="Drain & Sewer Services" />
               </div>
               <div className="service-card-title">
-                <h3>Drain & Sewer</h3>
+                <h3>Odor neutralizer</h3>
               </div>
               <div className="service-card-description">
-                <p>Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
+                <p>substance designed to eliminate or control unpleasant
+                      smells by chemically neutralizing odor molecules rather than
+                      simply masking them. Unlike air fresheners, which cover up odors 
+                      with fragrance, odor neutralizers actively interact with the
+                      compounds causing the smell.</p>
               </div>
               <div className="service-card-action">
-                <a href="/services/drain-sewer" className="read-more-btn">Read More</a>
+                <a href="/services" className="read-more-btn">Read More</a>
               </div>
             </div>
 
@@ -73,13 +82,16 @@ const Service = () => {
                 <img src="/service3.jpg" alt="Tankless Water Heaters" />
               </div>
               <div className="service-card-title">
-                <h3>Tankless Water Heaters</h3>
+                <h3>Manual emptying</h3>
               </div>
               <div className="service-card-description">
-                <p>Vivamus ac ultrices diam, vitae accumsan tellus. Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
+                <p>the process of physically removing waste or unwanted materials
+                      by hand from containers, tanks, or other holding units. This
+                      method is commonly used in environments where mechanical systems
+                      may be impractical or unnecessary.</p>
               </div>
               <div className="service-card-action">
-                <a href="/" className="read-more-btn">Read More</a>
+                <a href="/services" className="read-more-btn">Read More</a>
               </div>
             </div>
           </div>
@@ -101,7 +113,7 @@ const Service = () => {
                 </svg>
                 <div className="percentage">90%</div>
               </div>
-              <h3>Outdoors<br />Plumbing</h3>
+              <h3>Sewage<br />Treatment</h3>
             </div>
             
             {/* Commercial Plumbing */}
@@ -113,7 +125,7 @@ const Service = () => {
                 </svg>
                 <div className="percentage">90%</div>
               </div>
-              <h3>Commercial<br />Plumbing</h3>
+              <h3>Drainage<br />Systems</h3>
             </div>
             
             {/* Leak Detection */}
@@ -125,7 +137,7 @@ const Service = () => {
                 </svg>
                 <div className="percentage">95%</div>
               </div>
-              <h3>Leak<br />Detection</h3>
+              <h3>Pipe Repair &<br />Maintenance</h3>
             </div>
             
             {/* Water Damage */}
@@ -137,7 +149,7 @@ const Service = () => {
                 </svg>
                 <div className="percentage">66%</div>
               </div>
-              <h3>Water<br />Damage</h3>
+              <h3>Wastewater<br />Management</h3>
             </div>
             
             {/* Qualified Agents */}
@@ -161,7 +173,7 @@ const Service = () => {
                 </svg>
                 <div className="percentage">86%</div>
               </div>
-              <h3>Fair<br />Prices</h3>
+              <h3>Affordable<br />Solutions</h3>
             </div>
           </div>
         </div>
