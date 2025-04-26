@@ -39,6 +39,7 @@ const Home = () => {
 
       let currentStep = 0;
       
+      
       const timer = setInterval(() => {
         currentStep++;
         setStats({
