@@ -11,7 +11,7 @@ const Service = () => {
         <div className="service-header-overlay">
           <div className="service-header-content">
             <h1>Services</h1>
-            <p>Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</p>
+            <p>wide range of expert sewage management solutions, tailored to meet the unique needs of every project. Our focus is on efficiency, sustainability, and environmental responsibility.</p>
           </div>
         </div>
       </section>
@@ -26,7 +26,10 @@ const Service = () => {
               <h2>Popular Services</h2>
             </div>
             <div className="service-intro-right">
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium</p>
+              <p>We provide comprehensive sewage treatment solutions,
+                 ensuring efficient waste management, environmental protection, 
+                 and sustainable practices. Our services are designed to address
+                  every need with professionalism and reliability.</p>
             </div>
           </div>
 

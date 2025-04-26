@@ -81,7 +81,7 @@ const Contact = () => {
           <a href="#"><FaFacebookF /></a>
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaInstagram /></a>
+          <a href="https://www.instagram.com/camelmotorgroupltd/" target="_blank"><FaInstagram /></a>
         </div>
       </div>
 

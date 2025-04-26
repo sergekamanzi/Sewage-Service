@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './home.css';
 import { useNavigate } from 'react-router-dom';
+import { FaTruckFast } from "react-icons/fa6";
+import { MdCleanHands } from "react-icons/md";
+import { MdDeleteSweep } from "react-icons/md";
 import { FaTrashAlt, FaRecycle, FaShieldAlt, FaCogs, FaHeadset, FaLeaf, FaLightbulb, FaUserTie, FaThumbsUp, FaTruck, FaPlay, FaPause } from 'react-icons/fa';
 
 const Home = () => {
@@ -103,19 +106,19 @@ const Home = () => {
         <div className="hero-features-wrapper">
           <div className="hero-features">
             <div className="feature-card">
-              <FaTrashAlt className="feature-icon" />
-              <h3>Reliable Collection</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus, luctus nec.</p>
+              <FaTruckFast className="feature-icon" />
+              <h3>Emptying, Transportation</h3>
+              <p>the process of collecting, transporting, and disposing of waste from designated collection.</p>
             </div>
             <div className="feature-card">
-              <FaRecycle className="feature-icon" />
-              <h3>Extensive Recycling</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus, luctus nec.</p>
+              < MdCleanHands className="feature-icon" />
+              <h3>Odor neutralizer</h3>
+              <p>substance designed to eliminate unpleasant smells by chemically neutralizing odor.</p>
             </div>
             <div className="feature-card">
-              <FaShieldAlt className="feature-icon" />
-              <h3>Safe Disposal</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus, luctus nec.</p>
+              <MdDeleteSweep className="feature-icon" />
+              <h3>Manual emptying</h3>
+              <p> removing waste materials by hand from containers, tanks, or other holding units.</p>
             </div>
           </div>
         </div>
@@ -126,28 +129,28 @@ const Home = () => {
         <div className="manage-content">
           <h1>Smart Solutions for Waste and Recycling</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt faucibus velit eget condimentum. Curabitur pharetra, urna ut rutrum, congue.
+          We offer advanced waste and recycling solutions that enhance efficiency, reduce environmental impact, and support sustainable communities.
           </p>
           <div className="manage-features">
             <div className="manage-card">
               <FaCogs className="manage-icon" />
               <h3>Operations Management</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+              <p>We ensure the seamless operation of sewage systems, maintaining efficiency and minimizing service disruptions across all areas.</p>
             </div>
             <div className="manage-card">
               <FaHeadset className="manage-icon" />
               <h3>Customer Service</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+              <p>Our dedicated team is ready to assist with inquiries, service requests, and support to guarantee a smooth and reliable experience.</p>
             </div>
             <div className="manage-card">
               <FaLeaf className="manage-icon" />
               <h3>Environmental Compliance</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+              <p>We strictly adhere to environmental regulations, working to protect water resources and promote public health and safety.</p>
             </div>
             <div className="manage-card">
               <FaLightbulb className="manage-icon" />
               <h3>Sustainability and Innovation</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+              <p>We invest in sustainable technologies and innovative practices to create a cleaner, greener future for our communities.</p>
             </div>
           </div>
         </div>
@@ -189,14 +192,14 @@ const Home = () => {
       {/* Construction Services Section */}
       <section className="construction-section">
         <div className="construction-content">
-          <span className="subtitle">KRAFTY AGENCY</span>
-          <h1>SERVICES OF CONSTRUCTION</h1>
+          <span className="subtitle">SEWAGE AGENCY</span>
+          <h1>VISIT OUR SEWAGE WEBSITE</h1>
           <p>
-            For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors.
+          We collaborate with trusted partners to deliver added value for every project, connecting both public and private sectors seamlessly.
           </p>
           <div className="service-item">
             <FaLeaf className="service-icon" />
-            <h3>Commercial Design</h3>
+            <h3>Sustainable Solutions</h3>
           </div>
         </div>
         <div className="construction-video">
