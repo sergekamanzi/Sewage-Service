@@ -1,10 +1,12 @@
 /* General Styles */
 body {
   line-height: 1.6;
+  margin: 0;
 }
 
 .blog-container {
   width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Blog Header Section */
@@ -76,6 +78,7 @@ body {
   max-width: 1200px;
   margin: 50px auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .featured-post-header {
@@ -233,7 +236,7 @@ body {
   height: 100px;
   background-color: white;
   border-radius: 50%;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;

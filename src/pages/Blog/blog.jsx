@@ -66,10 +66,10 @@ const Blog = () => {
             variants={containerVariants}
           >
             <motion.h1 variants={slideVariants(false)}>Blog</motion.h1>
-            <motion.div className="breadcrumbs" variants={slideVariants(false)}>
-              <a href="/">Home</a>
-              <span className="separator">-</span>
-              <span className="current-page">Blog</span>
+            <motion.div className="breadcrumbs" variants={containerVariants}>
+              <motion.a href="/" variants={slideVariants(false)}>Home</motion.a>
+              <motion.span className="separator" variants={slideVariants(false)}>-</motion.span>
+              <motion.span className="current-page" variants={slideVariants(false)}>Blog</motion.span>
             </motion.div>
           </motion.div>
         </div>
@@ -97,8 +97,8 @@ const Blog = () => {
                 <div className="post-image-container">
                   <img src={post.image} alt={post.title} className="post-image" />
                 </div>
-                <div className="post-content">
-                  <div className="post-meta">
+                <motion.div className="post-content" variants={containerVariants}>
+                  <motion.div className="post-meta" variants={containerVariants}>
                     <motion.div className="author" variants={slideVariants(true)}>
                       <img src="/path-to-deka-logo.jpg" alt="Deka" className="author-logo" />
                       <span>deka</span>
@@ -107,10 +107,10 @@ const Blog = () => {
                       <img src="/path-to-calendar-icon.jpg" alt="Calendar" className="calendar-icon" />
                       <span>{post.date}</span>
                     </motion.div>
-                  </div>
+                  </motion.div>
                   <motion.h3 className="post-title" variants={slideVariants(true)}>{post.title}</motion.h3>
                   <motion.p className="post-description" variants={slideVariants(true)}>{post.description}</motion.p>
-                </div>
+                </motion.div>
               </motion.div>
             ))}
           </motion.div>
@@ -131,13 +131,7 @@ const Blog = () => {
           </motion.p>
           <motion.a href="#" className="shop-now-btn" variants={slideVariants(false)}>
             Donate Now
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="arrow-icon"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="arrow-icon">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </motion.a>
