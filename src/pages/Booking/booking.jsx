@@ -26,6 +26,7 @@ const Booking = ({ onClose }) => {
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false); // New state for popup
 
   const navigate = useNavigate();
 
@@ -94,7 +95,7 @@ const Booking = ({ onClose }) => {
       });
 
       console.log("Booking successfully saved with ID: ", docRef.id);
-      alert("Booking submitted successfully!");
+      setShowSuccessPopup(true); // Show the success popup instead of alert
       setFormData({
         fullName: '',
         email: '',
@@ -112,7 +113,6 @@ const Booking = ({ onClose }) => {
         message: '',
         termsAccepted: false
       });
-      navigate('/');
     } catch (error) {
       console.error("Error saving booking:", {
         message: error.message,
@@ -123,6 +123,11 @@ const Booking = ({ onClose }) => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handlePopupClose = () => {
+    setShowSuccessPopup(false);
+    navigate('/'); // Navigate to home after closing the popup
   };
 
   return (
@@ -367,6 +372,20 @@ const Booking = ({ onClose }) => {
           </form>
         </div>
       </div>
+
+      {/* Success Popup */}
+      {showSuccessPopup && (
+        <div className="success-popup-overlay">
+          <div className="success-popup">
+            <div className="success-icon">✔</div>
+            <h2>Booking Successful!</h2>
+            <p>Your booking has been submitted successfully. We'll reach out to you soon.</p>
+            <button className="popup-ok-button" onClick={handlePopupClose}>
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
