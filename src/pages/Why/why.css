@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,22 +45,21 @@
     margin-right: auto;
   }
   
-  
   /* ==========================================
      ABOUT BODY SECTION STYLES
      =========================================== */
   .about-body {
     padding: 50px 20px;
     position: relative;
-    background-color: #f9f9f9; /* Light background to match the image */
+    background-color: #f9f9f9;
   }
   
   .experience-banner {
     position: absolute;
     top: -30px;
     left: 20px;
-    background-color: #1a3c34; /* Dark green background */
-    color: #1a3c34; /* Dark green text */
+    background-color: #1a3c34;
+    color: #1a3c34;
     padding: 15px 25px;
     text-align: center;
     border-radius: 8px;
@@ -88,7 +87,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 50px;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
   }
   
   .image-section {
@@ -109,7 +108,7 @@
   
   .text-section h3 {
     font-size: 1rem;
-    color: #227549; /* Green text */
+    color: #227549;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 600;
@@ -117,7 +116,7 @@
   
   .text-section h2 {
     font-size: 2.5rem;
-    color: #005e20; /* Dark green */
+    color: #005e20;
     margin-bottom: 15px;
     font-weight: bold;
     line-height: 1.2;
@@ -172,7 +171,7 @@
   }
   
   .quote {
-    background-color: #1a3c34; /* Dark green background */
+    background-color: #1a3c34;
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -257,7 +256,7 @@
     justify-content: center;
     min-width: 70px;
     height: 70px;
-    background-color: #1a3c34; /* Red background for icons */
+    background-color: #1a3c34;
     border-radius: 50%;
     color: white;
     font-size: 1.8rem;
@@ -364,8 +363,8 @@
     }
   
     /* About Body Section */
-    .experience-banner{
-      margin-top: -100px;
+    .experience-banner {
+      margin-top: 0;
     }
   
     .experience-banner h2 {
