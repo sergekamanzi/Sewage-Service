@@ -45,6 +45,14 @@
   color: #b7b9c0;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(40) infinite alternate-reverse;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 .hero-content h1 {
