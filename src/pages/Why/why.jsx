@@ -87,7 +87,7 @@ const Why = () => {
           variants={containerVariants}
         >
           <div className="image-section">
-            <img src="/about-body.jpg" alt="Worker collecting trash" />
+            <img src="/34.jpg" alt="Worker collecting trash" />
           </div>
           <div className="text-section">
             <motion.h3 variants={slideVariants(true)}>About OUR SERVICE</motion.h3>
@@ -179,7 +179,7 @@ const Why = () => {
             </motion.div>
           </motion.div>
           <div className="reasons-image">
-            <img src="/truck.png" alt="Professional plumber with tools" />
+            <img src="/19.jpg" alt="Professional plumber with tools" />
           </div>
         </motion.div>
       </div>
