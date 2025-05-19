@@ -122,7 +122,7 @@ import { motion, useInView } from 'framer-motion';
       {/* Hero Section */}
       <section className="hero-section" ref={heroRef}>
         <video className="hero-video" autoPlay loop muted playsInline>
-          <source src="hero.mp4" type="video/mp4" />
+          <source src="aa.MOV" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="hero-overlay"></div>
@@ -132,8 +132,8 @@ import { motion, useInView } from 'framer-motion';
           animate={isHeroInView ? "visible" : "hidden"}
           variants={slideVariants(false)}
         >
-          <motion.h2 variants={slideVariants(false)}>We Are Diligent</motion.h2>
-          <motion.h1 variants={slideVariants(false)}>Innovative Solutions for a Cleaner Planet</motion.h1>
+          <motion.h2 variants={slideVariants(false)}>We Are Diligent...</motion.h2>
+          <motion.h1 variants={slideVariants(false)}>Innovative Solutions for a Cleaner Planet.</motion.h1>
           <motion.p variants={slideVariants(false)}>
             Treating sewage before it is released into the environment
             Ensuring clean water for communities is our priority
@@ -213,7 +213,7 @@ import { motion, useInView } from 'framer-motion';
         </motion.div>
         <div className="manage-image">
           <img
-            src="/manage.jpg"
+            src="/35.jpg"
             alt="People recycling"
             className="manage-image-content"
           />
