@@ -100,11 +100,11 @@ const Blog = () => {
                 <motion.div className="post-content" variants={containerVariants}>
                   <motion.div className="post-meta" variants={containerVariants}>
                     <motion.div className="author" variants={slideVariants(true)}>
-                      <img src="/path-to-deka-logo.jpg" alt="Deka" className="author-logo" />
+                      <img src="/news.png" alt="Deka" className="author-logo" />
                       <span>deka</span>
                     </motion.div>
                     <motion.div className="post-date" variants={slideVariants(true)}>
-                      <img src="/path-to-calendar-icon.jpg" alt="Calendar" className="calendar-icon" />
+                      <img src="/date.png" alt="Calendar" className="calendar-icon" />
                       <span>{post.date}</span>
                     </motion.div>
                   </motion.div>
