@@ -76,7 +76,7 @@ const Service = () => {
             {/* Plumbing Service Card */}
             <motion.div className="service-card" variants={slideVariants(true)}>
               <div className="service-card-image">
-                <img src="/service1.jpg" alt="Plumbing Services" />
+                <img src="/28.jpg" alt="Plumbing Services" />
               </div>
               <div className="service-card-title">
                 <h3>Emptying, Transportation</h3>
@@ -94,7 +94,7 @@ const Service = () => {
             {/* Drain & Sewer Service Card */}
             <motion.div className="service-card" variants={slideVariants(true)}>
               <div className="service-card-image">
-                <img src="/service2.jpg" alt="Drain & Sewer Services" />
+                <img src="/19.jpg" alt="Drain & Sewer Services" />
               </div>
               <div className="service-card-title">
                 <h3>Odor neutralizer</h3>
@@ -112,7 +112,7 @@ const Service = () => {
             {/* Tankless Water Heaters Service Card */}
             <motion.div className="service-card" variants={slideVariants(true)}>
               <div className="service-card-image">
-                <img src="/service3.jpg" alt="Tankless Water Heaters" />
+                <img src="/26.jpg" alt="Tankless Water Heaters" />
               </div>
               <div className="service-card-title">
                 <h3>Manual emptying</h3>
